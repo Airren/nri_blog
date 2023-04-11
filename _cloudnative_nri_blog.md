@@ -229,7 +229,7 @@ type LinuxContainerUpdate struct {
 
 ## 5. Containerd 集成NRI
 
-目前Containerd发布的[1.7.0](https://github.com/containerd/containerd/blob/main/docs/NRI.md)的正式版本中已经包含的NRI的基本功能。
+目前[Containerd1.7.0](https://github.com/containerd/containerd/blob/main/docs/NRI.md)的正式版本中已经包含的NRI的基本功能。
 
 Contained对NRI的支持分成两部分。 其中一个是一个通用NRI插件(Common Plugin, pkg/nri/\*)，又称为Containerd NRI插件，用于与NRI整合。另外一个是CRI特定NRI实现(/pkg/cri/server/nri.go), 用来在运行时不可知的NRI表示和CRI 插件的内部表示之间进行数据转换。
 
@@ -289,7 +289,7 @@ NRI 可以禁用外部运行插件的连接。在这种情况下NRI socket将不
 
 到现在为止，已经有越来越多的节点资源细粒度管理方案开始探索使用NRI实现的可能性。当NRI 成为节点细粒度资源分配管理方案后，可以进一步提高资源管理方案的标准化，提高相关组件的可复用性。 
 
-目前我们已经开源了一些[NRI插件](https://github.com/containers/nri-plugins)用于节点资源拓扑感知以及细粒度的资源绑定，接下来还有很多工作要做，欢迎各位与[我们](https://github.com/airren)一起推动NRI的发展，一起构建NRI的周边生态。
+目前我们已经开源了一些[NRI插件](https://github.com/containers/nri-plugins)用于节点资源拓扑感知以及细粒度的资源绑定，接下来还有很多工作要做，欢迎各位[联系我们](https://github.com/airren)一起推动NRI的发展，一起构建NRI的周边生态。
 
 
 
